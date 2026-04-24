@@ -5,21 +5,21 @@
 class Bt < Formula
   desc "gh-style CLI for Bitbucket Cloud and Data Center"
   homepage "https://github.com/arogan178/bitbucket-cli"
-  version "0.1.1"
+  version "0.1.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/arogan178/bitbucket-cli/releases/download/v0.1.1/bt_0.1.1_darwin_amd64.tar.gz"
-      sha256 "6c04431274edc4a9f687ac6d62cfee1c8add2161cd26ff3f7e9d2e3ec471f5ab"
+      url "https://github.com/arogan178/bitbucket-cli/releases/download/v0.1.2/bt_0.1.2_darwin_amd64.tar.gz"
+      sha256 "fc5b16894ae483f55474e20353eed1235ff61f6c4c9349a6a61f1890a9b8b8c7"
 
       define_method(:install) do
         bin.install "bt"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/arogan178/bitbucket-cli/releases/download/v0.1.1/bt_0.1.1_darwin_arm64.tar.gz"
-      sha256 "efef55d2055524f9bab27a5f627b66f46433e98106ad93992f848be0526a5779"
+      url "https://github.com/arogan178/bitbucket-cli/releases/download/v0.1.2/bt_0.1.2_darwin_arm64.tar.gz"
+      sha256 "47b90a6bfcdbba223622fe4cbc0588327ecdd879851c0345155f1c14e58aa675"
 
       define_method(:install) do
         bin.install "bt"
@@ -29,15 +29,15 @@ class Bt < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/arogan178/bitbucket-cli/releases/download/v0.1.1/bt_0.1.1_linux_amd64.tar.gz"
-      sha256 "463b9e78e8bf6121106927945c47d3599df57517446cc37a89601e15b391127c"
+      url "https://github.com/arogan178/bitbucket-cli/releases/download/v0.1.2/bt_0.1.2_linux_amd64.tar.gz"
+      sha256 "775665ee6fbd5849891e271d3349a1e4d9f3ba99809561926d48e0a9f17212b4"
       define_method(:install) do
         bin.install "bt"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/arogan178/bitbucket-cli/releases/download/v0.1.1/bt_0.1.1_linux_arm64.tar.gz"
-      sha256 "d73d516534535b965e101c64f680df351c75af9a1085abfb7a5e7aae507354b9"
+      url "https://github.com/arogan178/bitbucket-cli/releases/download/v0.1.2/bt_0.1.2_linux_arm64.tar.gz"
+      sha256 "81be7b8aa2f6d141c8918e94fc477ffe328bdd5ada34e90bf4af0cf5b71dc2af"
       define_method(:install) do
         bin.install "bt"
       end
